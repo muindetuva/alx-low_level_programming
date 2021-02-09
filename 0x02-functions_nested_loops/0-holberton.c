@@ -10,6 +10,7 @@ int main(void)
 {
 	char name[9]  = "Holberton";
 	int i;
+
 	for (i = 0; i < 9; i++)
 	{
 		_putchar(name[i]);
@@ -17,5 +18,3 @@ int main(void)
 	_putchar('\n');
 	return (0);
 }
-
-	
