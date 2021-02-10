@@ -1,53 +1,42 @@
 #include <stdio.h>
 
 /**
-  * jack_bauer - prints all the minutes ub a day
+  * times_table - prints the 9 by 9 times table
   *
   * Return: void
   */
+
 int main(void)
 {
-	int i, j, k, l;
+	int i, j, k;
 
-	for (i = 0; i <= 2; i++)
+	for (i = 0; i < 10; i++)
 	{
-		if (i == 2)
+		k = 0;
+		for (j = 0; j < 10; j++)
 		{
-			for(j = 0; j <= 3; j++)
+			if (k == 0)
 			{
-				for (k = 0; k <= 5; k++)
-                                {
-                                        for (l = 0; l <= 9; l++)
-                                        {
-                                               putchar('0' + i);
-                                                putchar('0' + j);
-                                                putchar(':');
-                                                putchar('0' + k);
-                                                putchar('0' + l);
-						putchar('\n');
-                                        }
-				}
+				putchar(k + '0');
 			}
-		}
-		else
-		{
-			for (j = 0; j <= 9; j++)
+			else if(k > 0 && k < 10)
 			{
-				for (k = 0; k <= 5; k++)
-				{
-					for (l = 0; l <= 9; l++)
-					{
-						putchar('0' + i);
-						putchar('0' + j);
-						putchar(':');
-						putchar('0' + k);
-						putchar('0' + l);
-						putchar('\n');
-					}
-
-				}
+				putchar(' ');
+				putchar(k + '0');
+			}	
+			else if (k > 9)
+			{
+				putchar((k / 10) + '0');
+				putchar((k % 10) + '0');
 			}
+			if (j != 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			k = k + i;
 		}
+		putchar('\n');
 	}
-	return (0);
+	return 0;
 }
