@@ -18,7 +18,7 @@ void print_diagonal(int n)
 	else
 	{
 		for (a = 0; a < n; a++)
-		{	
+		{
 			if (n > 1)
 			{
 				int i;
