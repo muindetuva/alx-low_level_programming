@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	long unsigned int current_divider = 2, largest;
-	long unsigned int number = 612852475143;
+	unsigned long int current_divider = 2, largest;
+	unsigned long int number = 612852475143;
 
 	while (number != 0)
 	{
