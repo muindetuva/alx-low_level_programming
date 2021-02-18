@@ -9,7 +9,7 @@
 char *_strcat(char *dest, char *src)
 {
 	int len = 0, start, track = 0;
-	
+
 	/*Find end of destination string*/
 	while (dest[len] != '\0')
 		len++;
