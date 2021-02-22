@@ -8,7 +8,7 @@
 
 char *_strchr(char *s, char c)
 {
-	int i;
+	int i = 0;
 	char *z;
 
 	z = 0;
@@ -20,6 +20,10 @@ char *_strchr(char *s, char c)
 			z = &s[i];
 			break;
 		}
+	}
+	if (s[i] == c)
+	{
+		z = &s[i];
 	}
 	return (z);
 }
