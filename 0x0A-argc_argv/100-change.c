@@ -11,9 +11,9 @@
 
 int main(int argc, char *argv[])
 {
-	int given_coins = 0, rem_change = 0, i;
+	int given_coins = 0, i;
 	int denoms[] = {25, 10, 5, 2, 1};
-	int change_amount;
+	long int change_amount, rem_change;
 
 	if (argc == 1)
 	{
@@ -32,8 +32,8 @@ int main(int argc, char *argv[])
 		for (i = 0; i < 5; i++)
 		{
 			int possible_coins = change_amount / denoms[i];
+
 			given_coins  += possible_coins;
-	
 			rem_change = atoi(argv[1]) % denoms[i];
 			change_amount = rem_change;
 		}
