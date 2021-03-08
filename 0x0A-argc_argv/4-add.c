@@ -6,7 +6,7 @@
   * @argc: the number of arguments passed to the function
   * @argv: an aray of the commanf line arguments passed to the functionn
   *
-  * Return: 0 if succesfule
+  * Return: 0 if succesful and 1 if there's an error
   */
 
 int main(int argc, char *argv[])
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("%d\n", argc - 1);
-		return (1);
+		return (0);
 	}
 	for (i = 1; i < argc; i++)
 	{
