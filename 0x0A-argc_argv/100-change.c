@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int given_coins = 0, rem_change = 0, i;
-	int denoms[] = {25, 10, 5, 1};
+	int denoms[] = {25, 10, 5, 2, 1};
 	int change_amount;
 
 	if (argc == 1)
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 	if (argc == 2)
 	{
-		for (i = 0; i < 4; i++)
+		for (i = 0; i < 5; i++)
 		{
 			int possible_coins = change_amount / denoms[i];
 			given_coins  += possible_coins;
