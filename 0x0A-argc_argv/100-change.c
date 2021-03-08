@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int given_coins = 0, rem_change = 0, i;
 	int denoms[] = {25, 10, 5, 1};
-	int change_amount = atoi(argv[1]);
+	int change_amount;
 
 	if (argc == 1)
 	{
@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
+	change_amount = atoi(argv[1]);
 	if (change_amount < 0)
 	{
 		printf("0\n");
