@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 			int possible_coins = change_amount / denoms[i];
 
 			given_coins  += possible_coins;
-			rem_change = atoi(argv[1]) % denoms[i];
+			rem_change = change_amount % denoms[i];
 			change_amount = rem_change;
 		}
 	}
