@@ -1,3 +1,6 @@
+#include <stdlib.h>
+#include "holberton.h"
+
 /**
   * free_grid - frees memory allocated in a grid
   * @grid: The grid to be freed
@@ -11,5 +14,6 @@ void free_grid(int **grid, int height)
 
 	for (i = 0; i < height; i++)
 		free(grid[i]);
+
 	free(grid);
 }
