@@ -32,6 +32,5 @@ int main(int argc, char *argv[])
 
 	ans = func_ptr(a, b);
 	printf("%d\n", ans);
-	
 	return (0);
 }

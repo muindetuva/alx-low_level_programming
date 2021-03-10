@@ -2,8 +2,7 @@
 #include "stdlib.h"
 /**
   * get_op_func - Matches function with correct operation
-  * @a: First int
-  * @b: Second int
+  * @s: Operation sign
   *
   * Return: Pointer to operation function
   */
