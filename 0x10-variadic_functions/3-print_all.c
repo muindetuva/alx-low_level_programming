@@ -9,7 +9,7 @@
 void print_all(const char * const format, ...)
 {
 	va_list strings;
-	int i = 0;
+	unsigned int i = 0;
 	char *sep = "", *str;
 
 	va_start(strings, format);
