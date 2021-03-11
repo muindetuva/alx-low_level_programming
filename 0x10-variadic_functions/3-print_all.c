@@ -22,22 +22,22 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				c = va_arg(strings, int);
-				printf("%s%c",separator, c);
+				printf("%s%c", separator, c);
 				break;
 			case 'i':
 				num = va_arg(strings, int);
-				printf("%s%d",separator, num);
+				printf("%s%d", separator, num);
 				break;
 			case 'f':
 				dec = va_arg(strings, double);
-				printf("%s%f",separator, dec);
+				printf("%s%f", separator, dec);
 				break;
 			case 's':
 				str = va_arg(strings, char *);
 				if (str == NULL)
 					printf("%s(nil)", separator);
 				else
-					printf("%s%s",separator, str);
+					printf("%s%s", separator, str);
 				break;
 		}
 		separator = ", ";
