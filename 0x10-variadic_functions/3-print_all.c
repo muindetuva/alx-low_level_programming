@@ -9,10 +9,8 @@
 void print_all(const char * const format, ...)
 {
 	va_list strings;
-	int i = 0, num;
-	float dec;
-	char c;
-	char *str, *separator = "";
+	int i = 0;
+	char *sep = "", *str;
 
 	va_start(strings, format);
 
@@ -24,31 +22,28 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				c = va_arg(strings, int);
-				printf("%s%c", separator, c);
+				printf("%s%c", sep, va_arg(strings, int));
 				break;
 			case 'i':
-				num = va_arg(strings, int);
-				printf("%s%d", separator, num);
+				printf("%s%d", sep, va_arg(strings, int));
 				break;
 			case 'f':
-				dec = va_arg(strings, double);
-				printf("%s%f", separator, dec);
+				printf("%s%f", sep, va_arg(strings, double));
 				break;
 			case 's':
 				str = va_arg(strings, char *);
 				if (str == NULL)
-					printf("%s(nil)", separator);
+					printf("%s(nil)", sep);
 				else
-					printf("%s%s", separator, str);
+					printf("%s%s", sep, str);
 				break;
 			default:
 				i++;
 				continue;
 		}
-		separator = ", ";
+		sep = ", ";
 		i++;
 	}
-	va_end(strings);
 	printf("\n");
+	va_end(strings);
 }
