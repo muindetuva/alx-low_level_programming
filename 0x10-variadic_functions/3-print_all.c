@@ -39,6 +39,9 @@ void print_all(const char * const format, ...)
 				else
 					printf("%s%s", separator, str);
 				break;
+			default:
+				i++;
+				continue;
 		}
 		separator = ", ";
 		i++;
