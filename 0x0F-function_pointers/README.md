@@ -1,2 +1,2 @@
-##C - Function pointers
+## C - Function pointers
 Learning about function Pointers in C
