@@ -14,10 +14,10 @@ void print_all(const char * const format, ...)
 
 	va_start(strings, format);
 
-	if (!format)
-		return;
 
-	while (format[i])
+
+
+	while (format && format[i])
 	{
 		switch (format[i])
 		{
@@ -37,7 +37,6 @@ void print_all(const char * const format, ...)
 				printf("%s%s", sep, str);
 				break;
 			default:
-				i++;
 				continue;
 		}
 		sep = ", ";
