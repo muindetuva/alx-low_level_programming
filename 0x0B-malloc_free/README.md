@@ -1,2 +1,2 @@
-##C - malloc, free
+## C - malloc, free
 Learning about memory management in C.
