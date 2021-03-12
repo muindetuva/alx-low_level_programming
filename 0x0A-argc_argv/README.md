@@ -1,2 +1,2 @@
-##C - argc, argv
+## C - argc, argv
 Working with Command line arguments.
