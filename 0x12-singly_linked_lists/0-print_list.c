@@ -2,7 +2,7 @@
 
 /**
   * print_list - Prints all tptre elements of a linked list
-  * @ptr: Pointer to the head of the list
+  * @h: Pointer to the head of the list
   *
   * Return: Tptre number of nodes
   */
