@@ -1,35 +1,29 @@
 #include "lists.h"
 
 /**
-  * print_list - Prints all tptre elements of a linked list
+  * print_list - Prints all the elements of a linked list
   * @h: Pointer to the head of the list
   *
-  * Return: Tptre number of nodes
+  * Return: The number of nodes
   */
 
 size_t print_list(const list_t *h)
 {
 	int count = 0;
-	const list_t *ptr = NULL;
 
-
-	if (h == NULL)
-		return (0);
-
-	ptr = h;
-	while (ptr != NULL)
+	while (h != NULL)
 	{
-		if (ptr->str == NULL)
+		if (h->str == NULL)
 		{
 			printf("[0] (nil)\n");
 			count++;
-			ptr = ptr->next;
+			h = h->next;
 		}
 		else
 		{
-			printf("[%u] %s\n", ptr->len, ptr->str);
+			printf("[%u] %s\n", h->len, h->str);
 			count++;
-			ptr = ptr->next;
+			h = h->next;
 		}
 	}
 	return (count);
