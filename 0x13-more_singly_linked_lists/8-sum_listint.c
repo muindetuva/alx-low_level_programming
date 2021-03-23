@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
-  * sum_listint_t - Returns the sum of all the data in the nodes
+  * sum_listint - Returns the sum of all the data in the nodes
   * @head: The start of the list
   *
   * Return: The sum of all the integers
