@@ -20,18 +20,26 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 
 	new->n = n;
+	new->next = NULL;
 	current = *head;
+<<<<<<< HEAD
 	if (current == NULL)
 		return (NULL);
+=======
+>>>>>>> parent of 63bfabe... Acoount for 0
 	while (current != NULL)
 	{
 		if (idx == 0)
 		{
-			new->next = *head;
-			*head = new;
+			new->next = current;
+			current = new;
 			return (new);
 		}
+<<<<<<< HEAD
 		if (i == (idx - 1))
+=======
+		else if (i == (idx - 1))
+>>>>>>> parent of 63bfabe... Acoount for 0
 		{
 			new->next = current->next;
 			current->next  = new;
@@ -42,7 +50,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			current = current->next;
 			i++;
 		}
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 63bfabe... Acoount for 0
 	}
 	return (NULL);
 }
