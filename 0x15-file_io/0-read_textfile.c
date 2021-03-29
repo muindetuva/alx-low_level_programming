@@ -24,13 +24,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	check = read(fd, buff, letters);
 	if (check == -1)
-	{
-		free(buff);
 		return (0);
-	}
 
 	len = write(STDOUT_FILENO, buff, check);
 	close(fd);
-	free(buff);
 	return (len);
 }
