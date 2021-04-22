@@ -55,7 +55,7 @@ if the linked list is empty return `0`
 > * if it is not possible to add the new node at index `idx`, do not add the new node and return `NULL`
 
 ### 10-delete_nodeint.c
-> function that deletes the node at index index of a listint_t linked list.
+> A function that deletes the node at index index of a listint_t linked list.
 > * Prototype: `int delete_nodeint_at_index(listint_t **head, unsigned int index);`
 > * where `index` is the index of the node that should be deleted. Index starts at `0`
 > * Returns: `1` if it succeeded, -`1` if it failed
