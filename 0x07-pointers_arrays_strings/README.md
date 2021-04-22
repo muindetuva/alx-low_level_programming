@@ -45,6 +45,6 @@ Working with multidimensional arrays and double pointers
 > * Prototype: ```void print_diagsums(int *a, int size);```
 > * You are allowed to use the standard library
 
-## 9-set_string.c
+### 9-set_string.c
 > A function that sets the value of a pointer to a char.
 > * Prototype: ```void set_string(char **s, char *to);```
