@@ -10,11 +10,11 @@ Learning how to use pointers and arrays and also writing some functions that use
 > * Prototype: ```void swap_int(int *a, int *b);```
 
 ### 2-strlen.c
-> A function that returns the length of a string similar to the standard libarary's **strlen**.
+> A function that returns the length of a string similar to the standard libarary's ```strlen```.
 > * Prototype: ```int _strlen(char *s);```
 
 ### 3-puts.c
-> A function that prints a string, followed by a new line, to stdout similar to the standard libarary's **puts**..
+> A function that prints a string, followed by a new line, to stdout similar to the standard libarary's ```puts```..
 > * Prototype: ```void _puts(char *str);```
 
 ### 4-print_rev.c
