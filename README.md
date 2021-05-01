@@ -121,3 +121,7 @@ Creating, opening, reading and writing files in C
 * read
 * write
 
+### 0x17-doubly_linked_lists
+Learning about doubly linked lists
+* What is a doubly linked list
+* How to use doubly linked lists
