@@ -22,6 +22,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	new_node->next = NULL;
 
 	before = *h;
+	/* If the trageted node is the first node */
 	if (idx == 0)
 	{
 		new_node->next = *h;
@@ -29,21 +30,25 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		(*h) = new_node;
 		return (new_node);
 	}
-
-
-	while (idx > 1)
+	
+	/* Loop to the specified index */
+	while (idx > 1 && before)
 	{
-		if (before == NULL)
-			return (NULL);
 		before = before->next;
 		idx--;
 	}
+	if (before == NULL)
+		return (NULL);
+
+
+	/* If the specified index happens to be the last node in the list */
 	if (before->next == NULL)
 	{
 		before->next = new_node;
 		new_node->prev = before;
 		return (new_node);
 	}
+	/* If the specified node is in between 2 nodes */
 	after = before->next;
 	before->next = new_node;
 	after->prev = new_node;
