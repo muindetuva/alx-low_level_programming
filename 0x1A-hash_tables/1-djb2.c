@@ -3,7 +3,7 @@
 /**
   * hash_djb2 - Implements the djb2 algorithm.
   * @str: The string tp be hashed
-  * 
+  *
   * Return: The hash value
   */
 
