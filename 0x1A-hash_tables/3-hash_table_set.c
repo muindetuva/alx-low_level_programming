@@ -34,8 +34,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	{
 		if (strcmp(key, temp->key) == 0)
 		{
-			new_node->next = temp;
-			temp = new_node;
+			free(temp->value);
+			temp->value = strdup(value)
 			return (1);
 		}
 		temp = temp->next;
