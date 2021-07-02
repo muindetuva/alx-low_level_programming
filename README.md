@@ -125,3 +125,22 @@ Creating, opening, reading and writing files in C
 Learning about doubly linked lists
 * What is a doubly linked list
 * How to use doubly linked lists
+
+
+### 0x1A-hash_tables
+Learning about Hash Tables
+* What is a hash function
+* What makes a good hash function
+* What is a hash table, how do they work and how to use them
+* What is a collision and what are the main ways of dealing with collisions in the context of a hash table
+* What are the advantages and drawbacks of using hash tables
+* What are the most common use cases of hash tables
+
+### 0x1C-makefiles
+Learning about make
+* What are make, Makefiles
+* When, why and how to use Makefiles
+* What are rules and how to set and use them
+* What are explicit and implicit rules
+* What are the most common / useful rules
+* What are variables and how to set and use them
